@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, sans-serif; /* Змінюємо стандартний шрифт */
+    margin: 0;                     /* Прибираємо відступи від країв вікна */
+    padding: 0;
+    line-height: 1.6;              /* Робимо відстань між рядками зручною для читання */
+    background-color: #f4f4f4;    /* Додаємо світлий фон для всієї сторінки */
+}
+header {
+    background-color: #2c3e50;    /* Темно-синій фон */
+    color: white;                  /* Білий колір тексту */
+    padding: 20px 0;               /* Внутрішні відступи зверху та знизу */
+    text-align: center;            /* Вирівнювання тексту по центру */
+}
+
+nav ul {
+    list-style: none;              /* Прибираємо крапки (маркери) списку */
+    padding: 0;
+    display: flex;                 /* Включаємо Flexbox (елементи стають у ряд) */
+    flex-wrap: wrap;               /* Дозволяємо кнопкам переноситися на мобільних */
+    justify-content: center;       /* Центруємо кнопки */
+    background: #34495e;
+}
+
+nav a {
+    text-decoration: none;         /* Прибираємо підкреслення посилань */
+    color: white;
+    padding: 15px 20px;            /* Робимо зону кліку більшою */
+    display: block;
+}
+
+nav a:hover {
+    background-color: #3498db;    /* Колір при наведенні мишкою */
+}
+article {
+    display: flex;                 /* Картки турів стають у ряд */
+    flex-wrap: wrap;               /* Магія адаптивності: перенос на новий рядок */
+    justify-content: center;       /* Центруємо блоки */
+    gap: 20px;                     /* Відстань між картками */
+    padding: 20px;
+}
+
+article div {
+    background: white;             /* Білий фон для кожної картки */
+    padding: 15px;
+    border-radius: 10px;           /* Заокруглюємо кути */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Додаємо легку тінь */
+    width: 250px;                  /* Фіксована ширина картки */
+    text-align: center;
+}
+
+article img {
+    width: 100%;                   /* Картинка займає всю ширину картки */
+    height: auto;                  /* Зберігає пропорції */
+    border-radius: 5px;
+}
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #2c3e50;
+    color: white;
+}
+
+footer img {
+    width: 40px;                   /* Компактний розмір іконок */
+    height: 40px;
+    margin: 10px;
+    transition: 0.3s;              /* Плавна анімація */
+}
+
+footer img:hover {
+    transform: scale(1.2);         /* Збільшення іконки при наведенні */
+}
+
